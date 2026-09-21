@@ -1,14 +1,631 @@
 <!doctype html>
-<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#e8eee2"><meta name="description" content="KlarGlanz – fiktive Demo-Website für einen Reinigungsservice. Designkonzept von Armin Studio."><title>KlarGlanz — Räume, die aufatmen. | Demo</title><style>
-:root{--green:#244734;--mint:#dcebd3;--cream:#f8faf2;--lime:#d6f1b8;--text:#223b2b}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--text);font-family:Arial,Helvetica,sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}button{cursor:pointer}.wrap{width:min(1160px,calc(100% - 50px));margin:auto}.demo-banner{background:#17241b;color:white;padding:10px 20px;text-align:center;font-size:12px;line-height:1.6}.demo-banner a{text-decoration:underline;color:var(--lime)}header{position:relative;z-index:4;background:#f8faf2}.nav{display:flex;align-items:center;justify-content:space-between;min-height:94px;gap:20px}.logo{font-family:Georgia,serif;font-size:30px;letter-spacing:-.07em;font-weight:bold}.logo span{color:#84ad69}.navlinks{display:flex;align-items:center;gap:32px;font-size:13px;font-weight:bold}.navlinks a:not(.button):hover{color:#668b58}.button{display:inline-flex;align-items:center;justify-content:center;gap:12px;padding:16px 22px;border-radius:100px;background:var(--green);color:white;border:1px solid var(--green);font-size:13px;font-weight:bold;transition:transform .2s}.button:hover{transform:translateY(-3px)}.button.light{background:var(--lime);color:var(--text);border-color:var(--lime)}.menu{display:none;background:none;border:1px solid #86998a;border-radius:9px;padding:8px 12px}.hero{background:var(--mint);overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;min-height:640px;gap:35px;align-items:center}.kicker{display:inline-flex;gap:10px;align-items:center;font-size:11px;font-weight:800;letter-spacing:.16em;text-transform:uppercase}.kicker:before{content:"";width:31px;height:1px;background:currentColor}.hero h1,.headline{font-family:Georgia,"Times New Roman",serif;font-weight:normal;letter-spacing:-.075em;line-height:.98}.hero h1{font-size:clamp(65px,7.9vw,116px);margin:28px 0}.hero h1 em{color:#759c68;font-style:italic}.hero p{max-width:430px;font-size:16px;line-height:1.8;color:#4b6652}.hero-actions{display:flex;align-items:center;gap:20px;margin:28px 0 43px;flex-wrap:wrap}.text-link{font-size:13px;font-weight:bold;border-bottom:1px solid;padding:9px 0}.highlights{display:flex;gap:30px;flex-wrap:wrap;font-size:12px;font-weight:bold}.highlights span:before{content:"✳";color:#69935b;margin-right:8px}.hero-art{height:640px;position:relative;display:flex;align-items:center;justify-content:center}.halo{position:absolute;width:530px;height:530px;border:1px solid #b5cdb0;border-radius:50%}.halo:before{content:"";position:absolute;inset:55px;border:1px solid #b5cdb0;border-radius:50%}.photo-card{position:relative;width:82%;height:74%;border-radius:180px 180px 18px 18px;background:radial-gradient(circle at 50% 27%,#f3f9e9 0 12%,transparent 12.5%),linear-gradient(120deg,#c3d7b5 3%,#8ab38b 30%,#4d8067 68%,#1e4838);overflow:hidden;box-shadow:22px 32px 65px #335a3d32}.photo-card:before{content:"✳";position:absolute;font-size:350px;line-height:1;color:#e6f4d3;opacity:.55;top:0;left:-100px;transform:rotate(-23deg)}.photo-card:after{content:"✦";position:absolute;font-size:240px;color:#d5eebe;right:-18px;bottom:-70px}.float{position:absolute;right:0;bottom:105px;background:var(--cream);border-radius:15px;padding:19px 23px;box-shadow:0 14px 35px #223b2b22;transform:rotate(6deg);font-family:Georgia,serif;font-size:20px}.float span{display:block;font:11px Arial,sans-serif;color:#62836b;margin-bottom:8px}.ribbon{background:var(--green);color:#e7f0dd;padding:21px 0}.ribbon .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;font-size:11px;font-weight:bold;letter-spacing:.12em;text-transform:uppercase}.section{padding:108px 0}.section-head{display:flex;align-items:end;justify-content:space-between;gap:25px;margin-bottom:45px}.headline{font-size:clamp(52px,6vw,87px);margin:18px 0}.section-intro{max-width:350px;font-size:15px;line-height:1.8;color:#698070}.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.service{background:#e9f0e3;border-radius:17px;padding:30px;min-height:320px;display:flex;flex-direction:column;justify-content:space-between}.service:nth-child(2){background:#d9e9d2}.service:nth-child(3){background:#e5ede1}.service-icon{font-size:50px}.service h3{font-family:Georgia,serif;font-size:34px;font-weight:normal;letter-spacing:-.05em;margin:0 0 10px}.service p{font-size:14px;line-height:1.7;color:#617566;margin:0}.about{background:#e5eddf}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:75px;align-items:center}.about-art{min-height:490px;border-radius:220px 220px 16px 16px;background:linear-gradient(130deg,#b6d0aa 0,#64977a 60%,#23513d 100%);position:relative;overflow:hidden;display:grid;place-items:center}.about-art:before{content:"✳";color:#d2ebb8;font-size:350px;position:absolute;transform:rotate(15deg)}.about-art span{z-index:1;position:absolute;bottom:32px;left:33px;background:#f5f9ee;border-radius:30px;padding:11px 17px;font-size:12px;font-weight:bold}.about-copy p{font-size:16px;line-height:1.85;color:#58705d}.about-points{display:grid;gap:14px;margin:30px 0}.about-points div{padding:16px 0;border-top:1px solid #b9cbb8;font-weight:bold;font-size:14px}.about-points span{color:#709a68;margin-right:17px}.contact{background:var(--green);color:white}.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.contact h2{max-width:500px}.contact p{color:#c5d5c7;line-height:1.7;max-width:390px}.contact-form{background:var(--cream);color:var(--text);border-radius:18px;padding:33px}.contact-form label{display:block;font-size:12px;font-weight:bold;margin:0 0 8px}.contact-form input,.contact-form textarea,.contact-form select{display:block;width:100%;border:1px solid #b9cab7;border-radius:9px;padding:14px;background:white;margin-bottom:18px;outline-offset:3px}.contact-form textarea{min-height:100px;resize:vertical}.contact-form .button{width:100%}.form-note{font-size:12px;line-height:1.6;color:#5b6d61}footer{background:#172d20;color:white;padding:30px 0}.footer-grid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12px;align-items:center}.footer-grid a{text-decoration:underline}dialog{border:0;border-radius:15px;max-width:min(580px,calc(100% - 28px));padding:30px;line-height:1.7}dialog::backdrop{background:#0009}.close{float:right;border:1px solid #444;border-radius:30px;padding:8px 12px;background:white}:focus-visible{outline:3px solid #c36b32;outline-offset:4px}@media(max-width:850px){.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr;gap:25px}.hero-grid{padding-top:60px}.hero-art{height:420px}.photo-card{max-width:380px}.halo{width:380px;height:380px}.float{right:10%}.section{padding:80px 0}.service-grid{grid-template-columns:1fr}.service{min-height:240px}.about-art{min-height:350px;max-width:570px}.section-head{display:block}.section-intro{margin-top:20px}}@media(max-width:600px){.wrap{width:calc(100% - 32px)}.nav{min-height:72px}.logo{font-size:27px}.menu{display:block}.navlinks{display:none;position:absolute;top:72px;left:0;right:0;background:var(--cream);flex-direction:column;align-items:stretch;padding:24px 16px;border-top:1px solid #cdd9c8;gap:22px}.navlinks.open{display:flex}.hero-grid{padding-top:50px}.hero h1{font-size:clamp(60px,16vw,87px)}.hero-art{height:350px}.halo{width:310px;height:310px}.photo-card{height:90%;width:80%}.float{bottom:45px;right:0;font-size:16px}.highlights{gap:13px}.headline{font-size:55px}.contact-form{padding:21px}.about-art:before{font-size:250px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
-</style></head><body>
-<div class="demo-banner"><strong>DESIGN-DEMO:</strong> KlarGlanz ist ein frei erfundenes Unternehmen. Dies ist kein echtes Dienstleistungsangebot. <a href="index.html">← Zurück zum Portfolio</a></div>
-<header><div class="wrap nav"><a class="logo" href="#start">klar<span>glanz.</span></a><button class="menu" id="menu" aria-expanded="false" aria-controls="navlinks">☰ Menü</button><nav class="navlinks" id="navlinks" aria-label="Hauptnavigation"><a href="#leistungen">Leistungen</a><a href="#ueber-uns">Über uns</a><a href="#kontakt" class="button">Anfrage-Demo ↗</a></nav></div></header>
-<main><section class="hero" id="start"><div class="wrap hero-grid"><div><span class="kicker">REINIGUNG NEU GEDACHT / DESIGNKONZEPT</span><h1>Räume, die<br><em>aufatmen.</em></h1><p>Frisch. Klar. Unkompliziert. Eine beispielhafte Website für einen Reinigungsservice, der sich um das gute Gefühl in deinen Räumen kümmert.</p><div class="hero-actions"><a class="button" href="#leistungen">Leistungen entdecken ↗</a><a class="text-link" href="#kontakt">Anfrage-Demo ansehen ↗</a></div><div class="highlights"><span>Klare Abläufe</span><span>Flexible Konzepte</span><span>Frischer Auftritt</span></div></div><div class="hero-art" aria-hidden="true"><div class="halo"></div><div class="photo-card"></div><div class="float"><span>GUT ZU WISSEN</span>Einfach wieder wohlfühlen. ✳</div></div></div></section>
-<div class="ribbon"><div class="wrap"><span>✳ ZUHAUSE & BÜRO</span><span>✳ DURCHDACHTE REINIGUNG</span><span>✳ UNKOMPLIZIERTE ANFRAGE</span></div></div>
-<section class="section" id="leistungen"><div class="wrap"><div class="section-head"><div><span class="kicker">WAS WIR MACHEN WÜRDEN</span><h2 class="headline">Sauber bis ins<br>kleine Detail.</h2></div><p class="section-intro">Drei beispielhafte Leistungsbereiche zeigen, wie sich ein Reinigungsangebot auf einer modernen Website verständlich präsentieren lässt.</p></div><div class="service-grid"><article class="service"><div class="service-icon" aria-hidden="true">⌂</div><div><h3>Privatreinigung</h3><p>Ein klares Konzept für die regelmäßige Reinigung von Wohnräumen – individuell und ohne komplizierte Abläufe.</p></div></article><article class="service"><div class="service-icon" aria-hidden="true">▧</div><div><h3>Büroreinigung</h3><p>Ein gepflegter Arbeitsplatz als Grundlage für eine angenehme und konzentrierte Arbeitsatmosphäre.</p></div></article><article class="service"><div class="service-icon" aria-hidden="true">✳</div><div><h3>Grundreinigung</h3><p>Ein frischer Neustart für Räume, die besondere Aufmerksamkeit und eine gründliche Reinigung brauchen.</p></div></article></div></div></section>
-<section class="section about" id="ueber-uns"><div class="wrap about-grid"><div class="about-art" aria-hidden="true"><span>MEHR RAUM ZUM WOHLFÜHLEN ✳</span></div><div class="about-copy"><span class="kicker">UNSER KONZEPT</span><h2 class="headline">Weniger Aufwand.<br>Mehr Leichtigkeit.</h2><p>Dieses fiktive Markenbeispiel zeigt, wie sich ein lokaler Service mit einem ruhigen Design, kurzen Texten und einer klaren Kontaktmöglichkeit präsentieren kann.</p><div class="about-points"><div><span>01</span> Übersichtliche Leistungen</div><div><span>02</span> Verständlicher Ablauf</div><div><span>03</span> Direkte Kontaktmöglichkeit</div></div><a class="button" href="#kontakt">Zum Anfrage-Beispiel ↗</a></div></div></section>
-<section class="section contact" id="kontakt"><div class="wrap contact-grid"><div><span class="kicker">UNVERBINDLICH / NUR DEMO</span><h2 class="headline">Ein frischer<br>Start beginnt<br>hier.</h2><p>So könnte der Kontaktbereich einer echten Reinigungsfirma aussehen. Das Formular ist bewusst eine Design-Demonstration und versendet keine Anfrage.</p></div><form class="contact-form" id="demoForm"><label for="demoName">Dein Name</label><input id="demoName" required placeholder="Max Mustermann"><label for="demoEmail">Deine E-Mail</label><input id="demoEmail" type="email" required placeholder="max@beispiel.de"><label for="demoService">Gewünschte Leistung</label><select id="demoService"><option>Privatreinigung</option><option>Büroreinigung</option><option>Grundreinigung</option></select><label for="demoMessage">Deine Nachricht</label><textarea id="demoMessage" required placeholder="Was soll gereinigt werden?"></textarea><button class="button" type="submit">Demo-Anfrage testen ↗</button><p class="form-note" id="demoStatus" role="status" aria-live="polite">Dies ist ein Design-Demo. Bitte keine echten personenbezogenen Daten eingeben. Es werden keine Daten versendet oder gespeichert.</p></form></div></section></main>
-<footer><div class="wrap footer-grid"><span class="logo" style="font-size:23px">klar<span>glanz.</span></span><span>Fiktives Unternehmen / Portfolio-Demo von Armin Studio</span><a href="index.html">Zurück zu Armin Studio ↗</a><button type="button" id="legalButton" style="background:none;color:white;border:0;text-decoration:underline">Rechtlicher Hinweis</button></div></footer>
-<dialog id="legalDialog"><button type="button" class="close" id="closeDialog">Schließen ✕</button><h2>Hinweis zur Demo</h2><p>KlarGlanz ist eine frei erfundene Marke. Diese Website dient ausschließlich als Designbeispiel. Die dargestellten Leistungen werden nicht angeboten. Das Formular sendet und speichert keine Daten.</p><p>Für eine echte Unternehmenswebsite müssen ein vollständiges Impressum, eine passende Datenschutzerklärung sowie zutreffende Unternehmensangaben ergänzt werden.</p></dialog>
-<script>'use strict';const b=document.getElementById('menu'),n=document.getElementById('navlinks');b.addEventListener('click',()=>{const open=n.classList.toggle('open');b.setAttribute('aria-expanded',String(open));b.textContent=open?'✕ Schließen':'☰ Menü';});n.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{n.classList.remove('open');b.setAttribute('aria-expanded','false');b.textContent='☰ Menü';}));document.getElementById('demoForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('demoStatus').textContent='Demo erfolgreich getestet: Es wurde keine Nachricht versendet und nichts gespeichert.';});const d=document.getElementById('legalDialog');document.getElementById('legalButton').addEventListener('click',()=>d.showModal());document.getElementById('closeDialog').addEventListener('click',()=>d.close());d.addEventListener('click',e=>{if(e.target===d)d.close();});</script></body></html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#091722">
+  <meta name="description" content="KlarGlanz Reinigung – hochwertige Demo-Website für ein fiktives Reinigungsunternehmen. Designkonzept von Armin Studio.">
+  <title>KlarGlanz Reinigung – Demo-Projekt</title>
+  <style>
+    :root{
+      --bg:#07141d;
+      --bg-2:#0d2230;
+      --card:#0f2534;
+      --card-2:#132d3f;
+      --text:#f3f7fb;
+      --muted:#b7c8d3;
+      --soft:#dbe6ee;
+      --line:rgba(255,255,255,.10);
+      --accent:#8fe8d7;
+      --accent-2:#61cfc4;
+      --white:#ffffff;
+      --surface:#f5f8fb;
+      --surface-2:#eaf1f5;
+      --heading:#10283a;
+      --copy:#506574;
+      --shadow:0 20px 60px rgba(0,0,0,.22);
+      --radius:24px;
+      --radius-sm:18px;
+      --max:1220px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+      background:var(--surface);
+      color:var(--heading);
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+    img{max-width:100%;display:block}
+    a{text-decoration:none;color:inherit}
+    button,input,textarea{font:inherit}
+    .wrap{width:min(var(--max), calc(100% - 34px));margin:0 auto}
+    .demo-bar{
+      background:#08131c;
+      color:#dde8ef;
+      text-align:center;
+      padding:12px 18px;
+      font-size:13px;
+      line-height:1.55;
+    }
+    .demo-bar a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+    .site-header{
+      position:sticky;top:0;z-index:40;
+      background:rgba(7,20,29,.82);
+      backdrop-filter: blur(14px);
+      border-bottom:1px solid rgba(255,255,255,.06);
+    }
+    .nav{
+      min-height:84px;
+      display:flex;align-items:center;justify-content:space-between;gap:24px;
+    }
+    .brand{display:flex;align-items:center;gap:14px;color:var(--white)}
+    .brand-icon{
+      width:46px;height:46px;border-radius:14px;
+      background:linear-gradient(145deg, rgba(143,232,215,.22), rgba(143,232,215,.08));
+      border:1px solid rgba(143,232,215,.22);
+      display:grid;place-items:center;flex:none;
+      box-shadow:inset 0 1px 0 rgba(255,255,255,.08);
+    }
+    .brand-copy{line-height:1}
+    .brand-copy strong{display:block;font-size:1.28rem;letter-spacing:-.04em}
+    .brand-copy span{display:block;color:#b8cad5;font-size:.86rem;margin-top:4px}
+    .navlinks{display:flex;align-items:center;gap:28px;color:#d4e1e8;font-size:.97rem}
+    .navlinks a:not(.btn):hover{color:var(--white)}
+    .btn{
+      display:inline-flex;align-items:center;justify-content:center;gap:10px;
+      border-radius:999px;padding:15px 22px;border:1px solid transparent;
+      font-weight:700;transition:transform .22s ease, box-shadow .22s ease, border-color .22s ease;
+    }
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--accent);color:#0d2630;box-shadow:0 12px 28px rgba(97,207,196,.22)}
+    .btn-ghost{background:transparent;border-color:rgba(255,255,255,.18);color:#f6fbff}
+    .menu{display:none;background:none;border:1px solid rgba(255,255,255,.18);color:white;border-radius:12px;padding:10px 14px}
+    .hero{
+      background:
+        radial-gradient(circle at 12% 18%, rgba(72,166,157,.20), transparent 32%),
+        radial-gradient(circle at 88% 0%, rgba(143,232,215,.12), transparent 28%),
+        linear-gradient(135deg, #07141d 0%, #0a1d2a 55%, #0d2434 100%);
+      color:var(--text);
+      position:relative;overflow:hidden;
+    }
+    .hero::after{
+      content:"";position:absolute;inset:auto -8% -180px auto;
+      width:520px;height:520px;border-radius:50%;
+      background:radial-gradient(circle, rgba(143,232,215,.16), rgba(143,232,215,0));pointer-events:none;
+      filter:blur(10px);
+    }
+    .hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:36px;align-items:stretch;padding:58px 0 34px}
+    .hero-copy{padding:26px 0 14px}
+    .eyebrow{display:inline-flex;align-items:center;gap:10px;color:#afc6d2;font-size:.79rem;font-weight:800;letter-spacing:.15em;text-transform:uppercase}
+    .eyebrow::before{content:"";width:30px;height:1px;background:currentColor;opacity:.65}
+    .hero h1{
+      font-size:clamp(3.45rem, 7vw, 5.6rem);
+      line-height:.93;letter-spacing:-.06em;margin:22px 0 20px;
+      max-width:620px;
+    }
+    .hero h1 .accent{color:var(--accent)}
+    .hero p{font-size:1.08rem;line-height:1.75;color:var(--muted);max-width:570px;margin:0}
+    .hero-actions{display:flex;flex-wrap:wrap;gap:14px;margin:32px 0 28px}
+    .hero-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:700px}
+    .hero-features .pill{
+      border:1px solid rgba(255,255,255,.09);border-radius:18px;background:rgba(255,255,255,.03);
+      padding:14px 16px;display:flex;gap:12px;align-items:flex-start;min-height:82px;
+    }
+    .icon-badge{
+      width:38px;height:38px;border-radius:12px;background:rgba(143,232,215,.11);
+      display:grid;place-items:center;color:var(--accent);flex:none;border:1px solid rgba(143,232,215,.20)
+    }
+    .pill strong{display:block;font-size:.97rem;color:var(--white)}
+    .pill span{display:block;font-size:.83rem;color:#abc0cb;line-height:1.5;margin-top:3px}
+    .hero-visual{display:flex;align-items:stretch}
+    .hero-card{
+      position:relative;flex:1;min-height:620px;border-radius:34px;overflow:hidden;box-shadow:var(--shadow);
+      background:linear-gradient(145deg,#10212d,#0b1823);
+      border:1px solid rgba(255,255,255,.08)
+    }
+    .hero-photo{
+      position:absolute;inset:0;
+      background:
+        linear-gradient(90deg, rgba(8,21,30,.92) 0%, rgba(8,21,30,.78) 36%, rgba(8,21,30,.18) 64%, rgba(8,21,30,.04) 100%),
+        url('klarglanz-hero.jpg') center/cover no-repeat;
+    }
+    .hero-overlay{position:relative;z-index:1;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:30px}
+    .floating-note,.badge-note,.hero-side-quote{
+      backdrop-filter: blur(10px);
+      background:rgba(255,255,255,.88);
+      color:#123041;border-radius:20px;box-shadow:0 16px 35px rgba(0,0,0,.18)
+    }
+    .floating-note{margin-left:auto;max-width:180px;padding:16px 16px 15px}
+    .floating-note strong{display:block;font-size:1rem;line-height:1.2}
+    .floating-note small{display:block;margin-top:8px;color:#4e6675;line-height:1.5}
+    .badge-note{
+      position:absolute;left:26px;bottom:26px;padding:12px 16px;display:flex;align-items:center;gap:10px;font-size:.93rem;font-weight:700;z-index:2;
+    }
+    .hero-side-quote{
+      position:absolute;right:24px;top:26px;max-width:205px;padding:16px 18px;font-size:1rem;line-height:1.42;z-index:2
+    }
+    .hero-side-quote span,.badge-note span{color:#55707e;font-size:.82rem;font-weight:600;display:block;margin-top:5px}
+    .info-strip{
+      padding:0 0 34px;
+    }
+    .strip-grid{
+      background:var(--white);border-radius:24px;box-shadow:0 18px 40px rgba(16,40,58,.08);
+      border:1px solid #e1e9ef;display:grid;grid-template-columns:repeat(4,1fr);overflow:hidden
+    }
+    .strip-item{padding:24px 20px;display:flex;gap:14px;align-items:flex-start}
+    .strip-item + .strip-item{border-left:1px solid #ebf0f4}
+    .strip-item strong{display:block;color:var(--heading);font-size:1rem}
+    .strip-item span{display:block;color:#627786;font-size:.9rem;line-height:1.5;margin-top:4px}
+    .section{padding:90px 0}
+    .section.white{background:var(--surface)}
+    .section.teal{
+      background:linear-gradient(135deg,#0c3140 0%, #104758 55%, #0f3b47 100%);
+      color:white;
+    }
+    .section-head{display:grid;grid-template-columns:1.05fr .95fr;gap:28px;align-items:end;margin-bottom:34px}
+    .section-head h2,.cta-copy h2{
+      margin:12px 0 0;font-size:clamp(2.15rem, 4.2vw, 3.65rem);line-height:.98;letter-spacing:-.05em
+    }
+    .section-head p,.results-copy p,.cta-copy p{margin:0;color:var(--copy);line-height:1.8;font-size:1.02rem}
+    .section.teal .section-head p,.section.teal .step-card p,.section.teal .process-note{color:#cae0e7}
+    .kicker-dark{color:#6f8697;font-weight:800;font-size:.78rem;letter-spacing:.13em;text-transform:uppercase}
+    .section.teal .kicker-dark{color:#9ac0cc}
+    .service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+    .service-card{
+      background:var(--white);border:1px solid #e2e9ef;border-radius:22px;overflow:hidden;box-shadow:0 14px 32px rgba(15,37,52,.06);
+      transition:transform .2s ease, box-shadow .2s ease;
+    }
+    .service-card:hover{transform:translateY(-6px);box-shadow:0 22px 44px rgba(15,37,52,.12)}
+    .service-card img{width:100%;aspect-ratio:16/10;object-fit:cover;background:#dbe4ea}
+    .service-body{padding:18px 18px 20px}
+    .service-top{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:10px}
+    .mini-icon{
+      width:42px;height:42px;border-radius:14px;background:#e9fbf7;color:#0c6974;display:grid;place-items:center;flex:none
+    }
+    .arrow-link{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#f0f5f8;color:#284253;flex:none}
+    .service-card h3{margin:0;font-size:1.08rem;letter-spacing:-.03em;color:var(--heading)}
+    .service-card p{margin:8px 0 0;color:var(--copy);line-height:1.65;font-size:.95rem}
+    .steps{
+      display:grid;grid-template-columns:1.05fr 1.95fr;gap:30px;align-items:end
+    }
+    .process-copy h2{max-width:520px}
+    .process-note{max-width:420px}
+    .demo-tag{
+      display:inline-flex;align-items:center;gap:10px;padding:12px 16px;border-radius:999px;
+      background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.18);font-weight:700;font-size:.95rem;color:white
+    }
+    .step-row{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .step-card{
+      background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:24px;padding:26px 22px 22px;
+      position:relative;backdrop-filter:blur(6px);min-height:240px
+    }
+    .step-num{
+      width:54px;height:54px;border-radius:50%;display:grid;place-items:center;
+      background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.18);font-weight:800;font-size:1.05rem;margin-bottom:18px
+    }
+    .step-card h3{margin:0 0 10px;font-size:1.22rem;letter-spacing:-.03em}
+    .step-card p{margin:0;font-size:.98rem;line-height:1.75}
+    .results-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:30px;align-items:center}
+    .results-media{
+      background:var(--white);border:1px solid #e3ebf1;border-radius:30px;padding:16px;box-shadow:0 18px 40px rgba(15,37,52,.08)
+    }
+    .results-frame{
+      position:relative;overflow:hidden;border-radius:20px;background:#dce6eb;aspect-ratio:16/10
+    }
+    .results-frame img{width:100%;height:100%;object-fit:cover}
+    .chip{
+      position:absolute;top:14px;background:rgba(11,27,38,.88);color:white;padding:8px 12px;border-radius:999px;
+      font-size:.82rem;font-weight:700
+    }
+    .chip.left{left:14px}.chip.right{right:14px;background:rgba(10,108,115,.92)}
+    .results-copy ul{list-style:none;padding:0;margin:28px 0 0;display:grid;gap:14px}
+    .results-copy li{display:flex;gap:12px;align-items:flex-start;color:var(--copy);line-height:1.7}
+    .check{width:28px;height:28px;border-radius:50%;background:#e9fbf7;color:#0c6974;display:grid;place-items:center;flex:none;font-weight:800}
+    .cta{
+      background:linear-gradient(145deg,#081620,#0e2230);
+      color:white;padding:44px;border-radius:34px;box-shadow:var(--shadow);
+      display:grid;grid-template-columns:1fr 1.05fr;gap:34px;align-items:start
+    }
+    .cta-copy p{color:#c7d8e2;max-width:520px}
+    .contact-card{
+      background:rgba(255,255,255,.96);color:var(--heading);border-radius:26px;padding:24px;border:1px solid rgba(255,255,255,.12)
+    }
+    .contact-card label{display:block;margin:0 0 8px;font-size:.9rem;font-weight:700;color:#264153}
+    .contact-card input,.contact-card textarea,.contact-card select{
+      width:100%;border:1px solid #d8e3ea;background:#fff;border-radius:16px;padding:14px 16px;margin:0 0 16px;
+      outline:none;transition:border-color .2s ease, box-shadow .2s ease
+    }
+    .contact-card textarea{min-height:120px;resize:vertical}
+    .contact-card input:focus,.contact-card textarea:focus,.contact-card select:focus{border-color:#8bdccd;box-shadow:0 0 0 4px rgba(97,207,196,.16)}
+    .contact-card .btn{width:100%}
+    .note{font-size:.83rem;line-height:1.65;color:#5b7180;margin:14px 0 0}
+    .site-footer{background:#07131b;color:#c8d6df;padding:26px 0}
+    .footer-grid{display:flex;justify-content:space-between;gap:18px;align-items:center;flex-wrap:wrap;font-size:.92rem}
+    .footer-links{display:flex;gap:18px;flex-wrap:wrap}
+    .footer-links button,.footer-links a{background:none;border:0;color:#c8d6df;text-decoration:underline;cursor:pointer;padding:0;font:inherit}
+    dialog{border:0;padding:0;border-radius:24px;max-width:min(640px, calc(100% - 24px));overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.28)}
+    dialog::backdrop{background:rgba(0,0,0,.45)}
+    .dialog-body{padding:28px 26px 24px;background:white;color:var(--heading)}
+    .dialog-body h3{margin:0 0 12px;font-size:1.55rem}
+    .dialog-body p{color:var(--copy);line-height:1.75}
+    .dialog-actions{display:flex;justify-content:flex-end;padding:0 26px 24px;background:white}
+    .dialog-actions button{border:0;background:#0e2737;color:white;padding:12px 18px;border-radius:999px;cursor:pointer;font-weight:700}
+    svg{display:block}
+    @media (max-width:1100px){
+      .hero-grid,.section-head,.results-grid,.steps,.cta{grid-template-columns:1fr}
+      .hero-card{min-height:560px}
+      .service-grid{grid-template-columns:repeat(2,1fr)}
+      .step-row{grid-template-columns:1fr}
+      .strip-grid{grid-template-columns:repeat(2,1fr)}
+      .strip-item:nth-child(3){border-left:none;border-top:1px solid #ebf0f4}
+      .strip-item:nth-child(4){border-top:1px solid #ebf0f4}
+    }
+    @media (max-width:760px){
+      .menu{display:block}
+      .navlinks{display:none;position:absolute;top:84px;left:0;right:0;background:#0a1a25;padding:22px 18px 24px;flex-direction:column;align-items:stretch;border-bottom:1px solid rgba(255,255,255,.08)}
+      .navlinks.open{display:flex}
+      .navlinks .btn{justify-content:center}
+      .hero-copy{padding-top:0}
+      .hero-features,.service-grid,.strip-grid{grid-template-columns:1fr}
+      .strip-item+.strip-item{border-left:none;border-top:1px solid #ebf0f4}
+      .strip-item:nth-child(3),.strip-item:nth-child(4){border-top:1px solid #ebf0f4}
+      .hero-card{min-height:520px}
+      .hero-overlay{padding:20px}
+      .hero-side-quote{right:16px;top:16px;max-width:170px;font-size:.92rem}
+      .badge-note{left:16px;bottom:16px}
+      .floating-note{max-width:160px;padding:14px 14px 12px}
+      .section,.info-strip{padding-top:74px;padding-bottom:74px}
+      .info-strip{padding-top:0}
+      .cta{padding:28px}
+    }
+    @media (max-width:540px){
+      .wrap{width:min(var(--max), calc(100% - 20px))}
+      .hero-grid{padding:42px 0 28px}
+      .hero h1{font-size:3.15rem}
+      .brand-copy strong{font-size:1.12rem}
+      .brand-copy span{font-size:.79rem}
+      .btn{padding:14px 18px}
+      .hero-card{min-height:460px;border-radius:26px}
+      .hero-side-quote{display:none}
+      .contact-card{padding:18px}
+      .cta{border-radius:28px}
+    }
+    @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn,.service-card{transition:none}}
+  </style>
+</head>
+<body>
+  <div class="demo-bar">
+    <strong>DESIGN-DEMO:</strong> KlarGlanz ist ein frei erfundenes Unternehmen. Diese Seite dient nur als Beispiel für Webdesign. 
+    <a href="index.html">← Zurück zum Portfolio</a>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="#start" aria-label="KlarGlanz Startseite">
+        <span class="brand-icon" aria-hidden="true">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M18.5 4.5C10 5.5 6 10.5 6 17.5C6 18.5 6.2 19.4 6.5 20C8.8 19.8 11.8 18.8 14.3 16.3C17.6 13 19 8.8 18.5 4.5Z" fill="#8FE8D7"/>
+            <path d="M8 18C10.5 14.8 13 12.5 17 9" stroke="#0c3441" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>KlarGlanz</strong>
+          <span>Reinigung</span>
+        </span>
+      </a>
+
+      <button class="menu" id="menu" aria-expanded="false" aria-controls="navlinks">☰ Menü</button>
+
+      <nav class="navlinks" id="navlinks" aria-label="Hauptnavigation">
+        <a href="#start">Startseite</a>
+        <a href="#leistungen">Leistungen</a>
+        <a href="#ablauf">Ablauf</a>
+        <a href="#kontakt">Kontakt</a>
+        <a class="btn btn-primary" href="#kontakt">Jetzt anfragen</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="start">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow">Professionelle Reinigung für Privat- und Geschäftskunden</span>
+          <h1>Sauberkeit,<br><span class="accent">die bleibt.</span></h1>
+          <p>Zuverlässige Reinigungslösungen für ein sauberes, gesundes und angenehmes Umfeld – in Ihrem Zuhause, im Büro und überall dort, wo der erste Eindruck zählt.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#kontakt">Kostenloses Angebot</a>
+            <a class="btn btn-ghost" href="#leistungen">Unsere Leistungen</a>
+          </div>
+          <div class="hero-features">
+            <div class="pill">
+              <span class="icon-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3L19 6V11.8C19 16.1 16 19.9 12 21C8 19.9 5 16.1 5 11.8V6L12 3Z" stroke="currentColor" stroke-width="1.8"/><path d="M9.5 12.2L11.4 14.1L14.9 10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <div><strong>Gründlich & zuverlässig</strong><span>Saubere Ergebnisse mit klaren Abläufen.</span></div>
+            </div>
+            <div class="pill">
+              <span class="icon-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M18.5 4.5C10 5.5 6 10.5 6 17.5C6 18.5 6.2 19.4 6.5 20C8.8 19.8 11.8 18.8 14.3 16.3C17.6 13 19 8.8 18.5 4.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M8 18C10.5 14.8 13 12.5 17 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              <div><strong>Umweltbewusst</strong><span>Schonende Mittel für ein gutes Raumgefühl.</span></div>
+            </div>
+            <div class="pill">
+              <span class="icon-badge" aria-hidden="true">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 10C9.65685 10 11 8.65685 11 7C11 5.34315 9.65685 4 8 4C6.34315 4 5 5.34315 5 7C5 8.65685 6.34315 10 8 10Z" stroke="currentColor" stroke-width="1.8"/><path d="M16 11C17.6569 11 19 9.65685 19 8C19 6.34315 17.6569 5 16 5C14.3431 5 13 6.34315 13 8C13 9.65685 14.3431 11 16 11Z" stroke="currentColor" stroke-width="1.8"/><path d="M4.5 19C4.5 16.7909 6.29086 15 8.5 15H9.5C11.7091 15 13.5 16.7909 13.5 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12.5 19C12.5 17.067 14.067 15.5 16 15.5H16.5C18.433 15.5 20 17.067 20 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+              </span>
+              <div><strong>Individuelle Lösungen</strong><span>Für Haushalt, Büro und besondere Anforderungen.</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-photo" aria-hidden="true"></div>
+            <div class="hero-side-quote">
+              Saubere Räume. Stärkere Menschen.
+              <span>Klares Design. Klare Botschaft.</span>
+            </div>
+            <div class="badge-note">
+              <span class="icon-badge" style="width:34px;height:34px;border-radius:12px;margin:0">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M18.5 4.5C10 5.5 6 10.5 6 17.5C6 18.5 6.2 19.4 6.5 20C8.8 19.8 11.8 18.8 14.3 16.3C17.6 13 19 8.8 18.5 4.5Z" stroke="currentColor" stroke-width="1.7"/><path d="M8 18C10.5 14.8 13 12.5 17 9" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg>
+              </span>
+              Für ein saubereres Morgen
+            </div>
+            <div class="hero-overlay">
+              <div class="floating-note">
+                <strong>Demo-Projekt</strong>
+                <small>Webdesign-Beispiel für eine fiktive Reinigungsfirma.</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="wrap info-strip">
+        <div class="strip-grid">
+          <div class="strip-item">
+            <span class="icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 4V20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </span>
+            <div><strong>Privat & Gewerbe</strong><span>Flexibel einsetzbar für Wohnungen, Häuser, Büros und Gewerbeflächen.</span></div>
+          </div>
+          <div class="strip-item">
+            <span class="icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M5 12H19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M12 5L19 12L12 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <div><strong>Klare Abläufe</strong><span>Vom Erstkontakt bis zum Termin übersichtlich und unkompliziert.</span></div>
+          </div>
+          <div class="strip-item">
+            <span class="icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 3V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M16 3V7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><rect x="4" y="5" width="16" height="15" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M4 10H20" stroke="currentColor" stroke-width="1.8"/></svg>
+            </span>
+            <div><strong>Flexible Termine</strong><span>Terminplanung passend zum Alltag und zu individuellen Wünschen.</span></div>
+          </div>
+          <div class="strip-item">
+            <span class="icon-badge" aria-hidden="true">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 17.5L6.5 20L7.5 14L3 9.5L9.1 8.6L12 3L14.9 8.6L21 9.5L16.5 14L17.5 20L12 17.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <div><strong>Hochwertiger Auftritt</strong><span>Modernes Erscheinungsbild mit starker visueller Präsentation.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" id="leistungen">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="kicker-dark">Unsere Leistungen</span>
+            <h2>Saubere Lösungen<br>für jeden Bedarf.</h2>
+          </div>
+          <p>Ob Privathaushalt, Büro oder besondere Einsätze – diese Demo zeigt, wie sich Leistungen klar, hochwertig und modern darstellen lassen, ohne überladen zu wirken.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <img src="klarglanz-home.jpg" alt="Helles Wohnzimmer als Beispiel für Unterhaltsreinigung">
+            <div class="service-body">
+              <div class="service-top">
+                <span class="mini-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M4 11L12 4L20 11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/><path d="M7 10.5V19H17V10.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="arrow-link" aria-hidden="true">→</span>
+              </div>
+              <h3>Unterhaltsreinigung</h3>
+              <p>Regelmäßige Reinigung für dauerhaft gepflegte Räume – klar kommuniziert und einfach verständlich dargestellt.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="klarglanz-office.jpg" alt="Modernes Büro als Beispiel für Büroreinigung">
+            <div class="service-body">
+              <div class="service-top">
+                <span class="mini-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="4" y="6" width="16" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M9 6V4.5H15V6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/><path d="M4 12H20" stroke="currentColor" stroke-width="1.8"/></svg>
+                </span>
+                <span class="arrow-link" aria-hidden="true">→</span>
+              </div>
+              <h3>Büroreinigung</h3>
+              <p>Ein sauberes Arbeitsumfeld für mehr Konzentration und Wohlbefinden – visuell modern und professionell inszeniert.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="klarglanz-glass.jpg" alt="Glasfassade als Beispiel für Glas- und Fassadenreinigung">
+            <div class="service-body">
+              <div class="service-top">
+                <span class="mini-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><rect x="5" y="5" width="14" height="14" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M12 5V19M5 12H19" stroke="currentColor" stroke-width="1.8"/></svg>
+                </span>
+                <span class="arrow-link" aria-hidden="true">→</span>
+              </div>
+              <h3>Glas- & Fassadenreinigung</h3>
+              <p>Klarer Durchblick und ein starker erster Eindruck – als übersichtliche Leistungs-Kachel im One-Page-Layout.</p>
+            </div>
+          </article>
+
+          <article class="service-card">
+            <img src="klarglanz-special.jpg" alt="Polster als Beispiel für Spezialreinigung">
+            <div class="service-body">
+              <div class="service-top">
+                <span class="mini-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 4L13.8 8.2L18 10L13.8 11.8L12 16L10.2 11.8L6 10L10.2 8.2L12 4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                </span>
+                <span class="arrow-link" aria-hidden="true">→</span>
+              </div>
+              <h3>Spezialreinigung</h3>
+              <p>Für besondere Anforderungen, sensible Oberflächen oder gründliche Einzelmaßnahmen – ruhig und hochwertig präsentiert.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section teal" id="ablauf">
+      <div class="wrap steps">
+        <div class="process-copy">
+          <span class="kicker-dark">So einfach geht’s</span>
+          <h2>In 3 Schritten<br>zu mehr Sauberkeit.</h2>
+          <p class="process-note">Die Seite orientiert sich eng am Beispielbild: klare Struktur, gute Lesbarkeit, starke Startsektion und ein sauberer Prozessbereich für mehr Vertrauen.</p>
+          <div style="margin-top:22px">
+            <span class="demo-tag">Demo-Projekt · Designkonzept</span>
+          </div>
+        </div>
+
+        <div class="step-row">
+          <article class="step-card">
+            <div class="step-num">1</div>
+            <h3>Anfrage stellen</h3>
+            <p>Interessenten senden eine unverbindliche Anfrage und beschreiben kurz, welche Art von Reinigung benötigt wird.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-num">2</div>
+            <h3>Termin vereinbaren</h3>
+            <p>Das Unternehmen koordiniert einen passenden Termin, erklärt den Ablauf und schafft direkt einen professionellen Eindruck.</p>
+          </article>
+          <article class="step-card">
+            <div class="step-num">3</div>
+            <h3>Sauber genießen</h3>
+            <p>Nach der Umsetzung bleibt ein klarer, hochwertiger Auftritt zurück – online wie auch im Gefühl, das die Marke vermittelt.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" id="ergebnisse">
+      <div class="wrap results-grid">
+        <div class="results-media">
+          <div class="results-frame">
+            <img src="klarglanz-before-after.jpg" alt="Vorher-Nachher Beispiel für sichtbare Reinigungsergebnisse">
+            <span class="chip left">Vorher</span>
+            <span class="chip right">Nachher</span>
+          </div>
+        </div>
+        <div class="results-copy">
+          <span class="kicker-dark">Sichtbare Ergebnisse</span>
+          <h2>Der Unterschied<br>spricht für sich.</h2>
+          <p>Auch der untere Bereich lehnt sich an das gezeigte Konzept an: ein sichtbares Ergebnis-Element, begleitet von klaren Nutzenpunkten statt überladenen Textblöcken.</p>
+          <ul>
+            <li><span class="check">✓</span><span>Ruhige, hochwertige Farbwelt in Dunkelblau, Weiß und Mint – nah am gewünschten Beispiel.</span></li>
+            <li><span class="check">✓</span><span>Klare visuelle Hierarchie mit starker Hero-Section, Leistungsblöcken und einem deutlichen Kontaktfokus.</span></li>
+            <li><span class="check">✓</span><span>Mobil optimiertes Layout, das auch auf kleineren Displays sauber und modern bleibt.</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section white" id="kontakt">
+      <div class="wrap">
+        <div class="cta">
+          <div class="cta-copy">
+            <span class="kicker-dark" style="color:#8fbccc">Kontakt-Demo</span>
+            <h2>Lassen Sie uns<br>starten.</h2>
+            <p>So könnte ein moderner Anfragebereich für eine echte Reinigungsfirma aussehen. Das Formular ist hier bewusst nur eine Design-Demonstration – es sendet nichts und speichert keine Daten.</p>
+          </div>
+
+          <form class="contact-card" id="demoForm">
+            <label for="name">Ihr Name</label>
+            <input id="name" name="name" type="text" placeholder="Max Mustermann" required>
+
+            <label for="email">Ihre E-Mail</label>
+            <input id="email" name="email" type="email" placeholder="name@unternehmen.de" required>
+
+            <label for="service">Gewünschte Leistung</label>
+            <select id="service" name="service">
+              <option>Unterhaltsreinigung</option>
+              <option>Büroreinigung</option>
+              <option>Glas- & Fassadenreinigung</option>
+              <option>Spezialreinigung</option>
+            </select>
+
+            <label for="message">Ihre Nachricht</label>
+            <textarea id="message" name="message" placeholder="Wobei können wir helfen?" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Demo-Anfrage testen</button>
+            <p class="note" id="status" role="status" aria-live="polite">Hinweis: Bitte keine echten personenbezogenen Daten eingeben. Diese Demo versendet und speichert nichts.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>Fiktives Webdesign-Demo von <strong>Armin Studio</strong></div>
+      <div class="footer-links">
+        <a href="index.html">Zurück zum Portfolio</a>
+        <button type="button" id="legalOpen">Rechtlicher Hinweis</button>
+      </div>
+    </div>
+  </footer>
+
+  <dialog id="legalDialog">
+    <div class="dialog-body">
+      <h3>Hinweis zur Demo</h3>
+      <p>KlarGlanz ist eine frei erfundene Marke. Diese Seite dient ausschließlich als visuelles Beispiel für ein mögliches Design einer Reinigungsfirma. Es handelt sich nicht um ein echtes Unternehmen und nicht um ein reales Angebot.</p>
+      <p>Das Formular sendet und speichert keine Daten. Für eine echte geschäftliche Veröffentlichung müssten unter anderem ein vollständiges Impressum, eine passende Datenschutzerklärung und korrekte Unternehmensangaben ergänzt werden.</p>
+    </div>
+    <div class="dialog-actions">
+      <button type="button" id="legalClose">Schließen</button>
+    </div>
+  </dialog>
+
+  <script>
+    'use strict';
+    const menu = document.getElementById('menu');
+    const navlinks = document.getElementById('navlinks');
+    if (menu) {
+      menu.addEventListener('click', () => {
+        const open = navlinks.classList.toggle('open');
+        menu.setAttribute('aria-expanded', String(open));
+        menu.textContent = open ? '✕ Schließen' : '☰ Menü';
+      });
+    }
+    navlinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        navlinks.classList.remove('open');
+        menu?.setAttribute('aria-expanded', 'false');
+        if (menu) menu.textContent = '☰ Menü';
+      });
+    });
+
+    const form = document.getElementById('demoForm');
+    const status = document.getElementById('status');
+    form.addEventListener('submit', (e) => {
+      e.preventDefault();
+      status.textContent = 'Demo erfolgreich getestet: Es wurde keine Nachricht versendet und nichts gespeichert.';
+    });
+
+    const dialog = document.getElementById('legalDialog');
+    document.getElementById('legalOpen').addEventListener('click', () => dialog.showModal());
+    document.getElementById('legalClose').addEventListener('click', () => dialog.close());
+    dialog.addEventListener('click', (e) => {
+      if (e.target === dialog) dialog.close();
+    });
+  </script>
+</body>
+</html>
